@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>1400</title>
+    <meta name="author" content="M.H. Tajaddini" />
+    <meta name="description" content="Norooz 1400" />
+    <link
+      rel="shortcut icon"
+      href="./favicon.png"
+      type="image/vnd.microsoft.icon"
+    />
+    <style type="text/css">
+      html {
+        color: #f1f1f1;
+        font: 1em "Segoe UI";
+        background: #121212;
+      }
+
+      p {
+        text-align: justify;
+        width: 20em;
+        margin: 1em auto;
+        padding: 0.5em;
+        background: rgba(0, 0, 0, 0.85);
+        font-size: 20px;
+        background: transparent;
+      }
+
+      .fa-txt {
+        direction: rtl;
+      }
+
+      .body {
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: linear-gradient(-45deg, black, transparent);
+      }
+
+      .earth {
+        z-index: 2;
+        position: relative;
+        background-color: skyblue;
+        width: 1em;
+        height: 1em;
+      }
+
+      .moon {
+        z-index: 3;
+        position: absolute;
+        top: 0.75em;
+        left: -0.75em;
+        background-color: silver;
+        width: 0.25em;
+        height: 0.25em;
+        animation: moon-orbit 10s ease-in-out infinite;
+      }
+
+      .sun {
+        position: relative;
+        z-index: 2;
+        background-color: yellow;
+        width: 10em;
+        height: 10em;
+        box-shadow: 0 0 1em yellow, inset 0 0 7em yellow;
+      }
+
+      .system-sun {
+        margin: 0 auto;
+        position: relative;
+        width: 10em;
+        height: 10em;
+      }
+
+      .system-earth {
+        z-index: 3;
+        position: absolute;
+        top: 4.5em;
+        left: -10em;
+        width: 1em;
+        height: 1em;
+        animation: earth-orbit 10s ease-in-out infinite;
+      }
+
+      @keyframes moon-orbit {
+        0% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(2.5em);
+        }
+
+        100% {
+          transform: translateX(0);
+          z-index: 1;
+        }
+      }
+
+      @keyframes earth-orbit {
+        0% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(30em);
+          z-index: 3;
+        }
+
+        100% {
+          transform: translateX(0);
+          z-index: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-top: 100px"></div>
+    <div class="system-sun">
+      <div class="system-earth">
+        <div class="body moon"></div>
+        <div class="body earth"></div>
+      </div>
+      <div class="body sun"></div>
+    </div>
+    <div style="padding: 50px; text-align: center">
+      <h1 style="font-size: 36px">Doesn't time fly?</h1>
+      <p>
+        It feels like yesterday, I was sending off my memes to congratulate you
+        on the new year. We were hoping it was gonna be better. We were
+        oblivious. It might feel superficial and arbitrary, but
+      </p>
+      <h2 style="font-size: 24px; color: rgb(159, 221, 66)">
+        If you're reading this,<br />know that I care about you.
+      </h2>
+      <p>
+        So, I hope you'll be well off this year. Better than last year, on the
+        right track for the next ones.
+      </p>
+      <h2 style="font-size: 24px; color: palevioletred">
+        It's an honor
+        <br />
+        to be friends with you
+      </h2>
+      <p style="color: palevioletred">
+        I wish for your physical and mental health, and overall well-being. I'd
+        love to see you making progress and achieving what you wanna have.
+      </p>
+    </div>
+    <div style="text-align: center; font-size: 18px">
+      <b> Yours truly </b>
+      <br />
+      M.H. Tajaddini
+      <br />
+      Norooz 1400 - March 2021
+    </div>
+    <div style="color: grey;text-align: center;margin-top: 20px;">
+      P.S. I was going to send this as an email but my domain gets filtered as spam 😢
+      <br>
+      + It's also super wonky to make HTML+CSS emails.
+    </div>
+    <div style="height: 100px"></div>
+  </body>
+</html>
